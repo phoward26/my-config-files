@@ -40,6 +40,8 @@ local plugins = {
         "json-lsp",
         "docker-compose-language-service",
         "dockerfile-language-server",
+        "cpplint",
+        "shellcheck",
 			},
 		},
 	},
