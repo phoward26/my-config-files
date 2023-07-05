@@ -22,7 +22,8 @@ local plugins = {
 
         "cpp",
         "cmake",
-        "json"
+        "json",
+        "dockerfile"
       }
     }
   }
