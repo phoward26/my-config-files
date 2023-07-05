@@ -2,7 +2,6 @@ local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require("lspconfig")
--- local servers = { "html", "cssls", "clangd", "cmake" }
 local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
 lspconfig.clangd.setup({
@@ -25,10 +24,6 @@ lspconfig.dockerls.setup({
 	capabilities = capabilities,
 })
 
-lspconfig.jsonls.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
 -- This for loop will automatically set everything up for me, but I need to manually control the command for clang
 -- for _, lsp in ipairs(servers) do
 --   lspconfig[lsp].setup {
